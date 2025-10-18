@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 40px;
+      animation: fadeIn 1s ease;
+    }
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    label {
+      font-weight: 500;
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #4b6cb7;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: 48%;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"] {
+      background-color: #4b6cb7;
+      color: white;
+    }
+    input[type="reset"] {
+      background-color: #ccc;
+    }
+    input[type="submit"]:hover {
+      background-color: #182848;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">📝 Formulir Pendaftaran</h2>
+  <form>
+    <label>Nama Lengkap:</label>
+    <input type="text" name="nama" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Jenis Kelamin:</label>
+    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+    <input type="radio" name="jk" value="Perempuan"> Perempuan
+
+    <label>Alamat:</label>
+    <textarea name="alamat" rows="4"></textarea>
+
+    <div style="display:flex; justify-content:space-between;">
+      <input type="submit" value="Daftar">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>

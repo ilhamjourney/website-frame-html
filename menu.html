@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+      animation: slideIn 0.8s ease;
+    }
+    h3 {
+      color: #333;
+      text-align: center;
+    }
+    a {
+      display: block;
+      color: #182848;
+      text-decoration: none;
+      background-color: #dce1f2;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      background-color: #4b6cb7;
+      color: white;
+      transform: scale(1.05);
+    }
+    @keyframes slideIn {
+      from {transform: translateX(-30px); opacity: 0;}
+      to {transform: translateX(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <h3>Menu Navigasi</h3>
+  <a href="Utama.html" target="utama">🏠 HOME</a>
+  <a href="Profile.html" target="utama">👤 PROFILE</a>
+  <a href="Daftar.html" target="utama">📝 DAFTAR</a>
+</body>
+</html>
